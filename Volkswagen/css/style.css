@@ -1,0 +1,1155 @@
+body{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    background-color:#ececec;
+    -webkit-font-smoothing: antialiased;
+ 
+}
+
+*,
+*:before,
+*:after{
+
+    box-sizing: border-box;
+    /* content-box-это значение по умолчанию. 
+    В этом случае свойства width/height обозначают то, что находится внутри padding.
+    border-box
+border-box позволяет значения padding и border вычитать из ширины и длины блока, т.е. в нашем примере div останется с фиксированными параметрами, 
+но для контента останется 60х60 px,*/
+}
+
+span
+{
+    text-transform: uppercase;
+}
+
+
+
+/* Container
+=================================================== */
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+
+.sloy
+{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:1000;
+}
+
+
+
+/* Header
+=================================================== */
+
+.header{
+    position: relative;
+    border-bottom: 2px solid #ffffff42 ;
+   
+    
+
+
+
+}
+
+.header__inner{
+
+    display: flex;
+    justify-content:space-around
+    
+
+
+    
+}
+
+/* Logo */
+
+.logo__size
+{
+    width: 100%;
+    max-width:281px;
+ 
+}
+
+.logo__Volkswagen
+{
+    position: absolute;
+ 
+}
+
+.header__logo
+{
+    position:relative;
+    width: 281px;
+    height: 227px;
+}
+
+.header__logo .overlay
+{
+    position:absolute;
+    top: 25%;
+    left: 25%;
+    margin: -50px 0 0 -50px;
+    width: 247px;
+    height: 158px;
+}
+
+
+
+.header__title
+{
+  
+
+    display: flex;
+    flex-direction: row;
+    margin-top:25px;
+    margin-bottom:25px;
+    
+
+}
+
+
+
+
+/* Servis
+============================================================= */
+.servis
+{
+    color: white;
+    margin-right:80px;
+  
+
+}
+
+.servis__title
+{
+    margin: 0;
+    font-size: 33px;
+  
+  
+
+
+}
+
+.servis__text
+{
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 16px;
+}
+
+
+
+/* Avtolux
+================================================================== */
+.logo__avtolux
+{
+    margin-right:80px;
+   
+}
+
+.contacts{
+    color: white;
+
+}
+
+.tel
+{
+    font-size: 33px;
+    font-weight:500;
+}
+
+.contacts__text
+{
+    font-size:16px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+/* nav
+===================================================================== */
+.nav
+{
+    display: flex;
+
+    color: white;
+    height: 40px;
+
+}
+
+
+
+.nav__inner
+{
+
+
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px ;
+    margin-left: 340px; 
+    
+
+}
+
+.nav__links
+{
+ 
+   font-size: 19px;
+}
+
+.nav__link
+{
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav__link:hover
+{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.nav__link:last-child{
+    margin-right: 0; 
+}
+
+
+/* social
+===================================================================== */
+.social
+{
+   display: flex;
+
+}
+
+.social__item
+{
+
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transition: background .1s;
+}
+
+
+
+.social__item:last-child
+{
+
+    margin-right: 0px;
+}
+
+/*Facebook  
+=================================================================================*/
+
+.social__iconFacebook
+{
+  
+    height: 25px;
+    width: 25px;
+  
+    fill:#9b9b9b;
+}
+ 
+.social__iconFacebook:hover
+{
+    fill:#4065b4;
+  
+  
+}
+
+/*Youtube  
+=================================================================================*/
+
+.social__iconYoutube
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+}
+ 
+.social__iconYoutube:hover
+{
+    fill:#df1818;
+    background-color: rgba(255, 255, 255, 0);
+
+  
+}
+
+/* Vk 
+============================================================================== */
+.social__iconVK
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconVK:hover
+{
+    fill:#4e759d;
+    background-color: white;
+ 
+  
+}
+
+/* twitter 
+===============================================================================*/
+
+.social__iconTwitter
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconTwitter:hover
+{
+    fill:#017dfa;
+    
+ 
+  
+}
+
+/* odnoklassniki
+===============================================================================*/
+
+.social__iconOdnoklassniki
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconOdnoklassniki:hover
+{
+    fill:#ff6004;
+    background-color: white;
+ 
+  
+}
+
+/* Intro 
+======================================================================================== */
+.intro{
+ 
+    display: flex;
+    align-items:flex-end;
+    
+
+    height: 736px;
+    background: url(../img/intro.jpg)  center  no-repeat  ;
+    background-size: 100%; /* Современные браузеры */
+    padding-top:130px;
+   
+}
+
+.intro__inner
+{
+    display: flex;
+    
+    
+
+   
+
+   
+}
+
+.intro__item
+{
+ 
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    margin-bottom: 90px;
+    margin-right: 3px;
+
+
+    
+
+}
+
+.intro__item:last-child
+{
+ 
+
+    margin-right: 0px;
+    padding-right: 0px;
+
+
+    
+
+}
+
+.btn
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 27px 35px;
+    /* наследуем у родителя */
+    font-family: inherit;  
+    border: none;
+    cursor: pointer;
+    transition:background .2s linear;
+    background-color:#525456;
+
+}
+
+.btn:focus
+{
+    outline: none;
+    background-color:#918f8f;
+
+}
+
+
+/* Submenu */
+
+.submenu {
+
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1cc;
+    min-width: 469px;
+    bottom: 90px;
+    overflow: auto;
+
+
+ 
+ 
+
+    z-index: 1;
+ 
+}
+
+.show {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+  
+
+;
+  
+
+}
+
+
+
+
+
+.submemu__inner
+{
+    position: relative;
+    font-family: 'Bitte', sans-serif;;
+   
+  
+}
+
+.visitingCard
+{
+
+    margin: 44px 55px 44px 5px;
+}
+
+.submenu__title
+{
+    font-size: 33px;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+.submenu__text
+{
+    font-size: 16px;
+
+}
+
+.submenu__text--bold
+{
+    font-weight: bold; 
+
+}
+
+.pers__tel
+{
+
+    text-align: right;
+    font-size: 40px;
+    line-height:1.5;
+    font-weight: bold;
+    color:#325388;
+}
+
+.pers__tel--center
+{
+    font-size: 31px;
+    text-align: left;
+}
+
+
+
+
+.buttons__inner
+{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.arrowButton
+{
+    height:50%;
+    background-color:#3a4e7000;
+    border: none;
+    outline: none;
+       
+
+}
+
+.icon_arrow
+{
+    
+    width: 40px;
+    height: 40px;
+    fill: #3a4e70;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon_arrow:hover
+{
+    fill: black;
+}
+
+
+
+
+
+
+
+
+
+/*aboutService*/
+
+.aboutService
+{
+    height: 456px;
+    overflow: hidden;
+}
+
+.aboutService__body
+{
+    margin: 0;
+    padding: 0;
+    perspective: 1px; 
+    transform-style: preserve-3d;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 456px;
+}
+
+.aboutService__body::-webkit-scrollbar 
+{
+    width:0px;
+}
+
+.aboutService__parallax
+{
+    background: url("../img/blur.jpg") no-repeat fixed;
+    height:1255px;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+
+
+  .aboutService__title
+  {
+      font-size: 30px;
+      margin-top: 57px;
+      text-align: center;
+      font-family: 'Bitte', sans-serif;
+      font-weight: bold;
+      color: white;
+      line-height:1.3;
+
+
+  }
+
+  .aboutServise__inner
+  {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+   
+  }
+  .aboutService__items
+  {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 50px;
+    font-size:30px;
+    color: white;
+  }
+
+  .aboutService__text
+  {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    font-size:30px;
+    margin:0 50px;
+ 
+    color:white;
+  }
+
+/* maintenance */
+
+  .maintenance
+   {
+
+    height: 736px;
+    background:  #ececec url("../img/Car.png") center no-repeat ;
+
+   }
+
+  
+
+   .maintenance__title
+   {
+
+    font-size: 30px;
+    margin-top:85px;
+    margin-bottom:70px;
+    text-align: center;
+    font-family: 'Bitte', sans-serif;
+    font-weight: bold;
+    color: #3a4e70;
+    line-height:1.3;
+
+
+   }
+
+   .maintenance__inner
+   {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+  
+
+       margin: 0 27px;
+   }
+
+
+   .maintenance__item
+   {
+    display:flex;
+    
+    text-align: left;
+
+    width: 50%;
+
+   }
+
+   .maintenance__text
+   {
+    
+
+    margin-top: 50px;
+    font-size:30px;
+    color:#484747;
+    width: 70%;
+    padding-top: 5px;
+    position: relative;
+   }
+   .maintenance__text--right
+   {
+    text-align: right;
+    margin-right: 60px;
+
+   }
+
+   .maintenance__item--right
+   {
+
+    justify-content:flex-end;
+    text-align: right;
+    margin-right: 0;
+    
+
+    
+   }
+
+   
+
+   .maintenance__footer
+   {
+       display:flex;
+       width: 100%;
+       margin-top: 0;
+
+
+   }
+
+   .maintenance__line
+   {
+       position: absolute;
+       margin-left: 110px;
+
+    
+      
+   }
+
+   .maintenance__line--right
+   {
+
+       margin-left: 0px;
+     margin-right: 20%;
+       right: 35%;
+       bottom: 10%;
+    
+      
+   }
+
+
+   .maintenance__line--center
+   {
+      
+       margin-left: 0px;
+       margin-right: 25%;
+       right: 25%;
+       bottom: 10%;
+    
+      
+   }
+
+   .maintenance__line--bottom
+   {
+     
+       margin-left: 20px;
+       top:10px;
+
+
+    
+      
+   }
+
+   .maintenance__line--top
+   {
+    margin-left: 0px;
+    margin-right: 0px;
+    right:15% ;
+
+       
+   }
+
+   /* tireles */
+
+
+   .titres
+   {
+    margin:0;
+    padding:0;
+    font-family: 'Bitte', sans-serif;
+    background: none;
+
+   }
+
+   .parallax {
+    position:relative;
+    z-index:1;
+    height:538px;
+    -webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+    
+  }
+
+  .tires__parallax {
+    background: url("../img/tires.jpg") no-repeat fixed;
+    height:575px;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+  }
+  
+  .tires__title
+  {
+      font-size: 33px;
+      margin-top: 45px;
+      margin-bottom: 60px;
+      text-align: center;
+      line-height:0.6;
+      font-weight: bold;
+      color:white
+
+  }
+
+  .tires__inner
+  {
+      display:flex;
+      justify-content:flex-end;
+   
+
+
+
+  }
+
+  /* brandsCars */
+
+  .brandsCars
+  {
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .braidsCars__item
+  {
+      margin-bottom:55px;
+      margin-right:40px ;
+      text-align: right;
+   
+
+  }
+
+  .braidsCars__titls
+  {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    line-height:1.1;
+    margin-bottom: 5px;
+  }
+
+  .braidsCars__text
+  {
+    font-family: 'Bitte', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: white;
+    
+    }
+
+
+/* imgsCars */
+
+  .imgsCars
+  {
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+    
+  }
+
+  .icon__car
+  {
+      margin-bottom:56px;
+
+  
+  }
+
+  .border__vert
+  {
+    border-left: 1px solid #325388;
+    height: 400px;
+    margin-right: 40px;
+  }
+  
+
+/* tiresName */
+
+  .tires__navsLinks
+  {
+    display:flex;
+    flex-direction: column;
+    width: 25%; 
+    font-family: 'Bitte', sans-serif;
+    font-size: 26px;
+    line-height:0.7;
+    
+
+  }
+
+  .tires__navsLink
+  {
+      margin-top: 20px;
+      color:#325388;
+      text-decoration: none;
+      
+   
+  }
+
+    .tires__navsLink:hover
+    {
+
+        font-weight: bold;
+
+    }
+  
+    /* cutaway */
+
+    .cutaway
+    {
+      
+    }
+
+    .cutaway__inner
+    {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .cutaway__item
+    {
+        width: 50%;
+     
+        margin:33px 28px 104px 114px;
+        
+
+    }
+    .cutaway__item:last-child
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .cutaway__title
+    {
+        font-family:'Roboto Condensed', sans-serif;
+        font-size: 23px;
+        text-align: right;
+        color:#484747;
+      
+        
+
+
+        
+    }
+
+   
+
+
+    .cutaway__text
+    {
+        font-size: 17px;
+        color:#484747;
+        text-align: justify;
+
+    }
+
+    /* castrol */
+
+    .castrol
+    {
+        background-color: #8b8989;
+    }
+
+    .castrol__title
+    {
+        text-align: center;
+        font-size: 33px;
+        color:white;
+        padding-top:33px;
+        padding-bottom: 50px;
+
+    }
+
+    .castrol__items
+    {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 40px;
+    }
+
+    .castrol__logo
+    {
+        margin-right: 25px;
+        margin-left: 22px;
+    }
+
+    /* adress*/
+
+    .adress
+    {
+     
+        background-color: #ececec;
+    }
+
+    .adress__inner{
+        width: 100%;
+        max-width: 1365px;
+
+    }
+
+    .adress__title
+    {
+        font-size: 33px;
+        line-height:0.6;
+        font-weight: bold;
+        color:#325388;
+        text-align: center;
+        padding-top:75px;
+        padding-bottom:45px;
+    }
+
+     .adress__map {
+     
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+      } 
+
+
+      /* footer */
+      .footer
+      {
+          background-color: #415f88;
+      }
+      
+      .footer__items
+      {
+         display: flex;
+         flex-direction: row;
+         
+      }
+
+      .footer__item
+      {
+        width: 25%;
+      }
+      .footer__item--center
+      {
+        width: 50%;
+      }
+
+      .footer__logo
+      {
+
+        margin:60px 16px 77px 20px ;
+       
+      }
+
+      .footer__title
+      {
+        font-size: 33px;
+        font-weight: bold;
+        color:#ffffff;
+        margin:70px 0px 15px 0px ;
+       
+      }
+
+      .footer__text
+      {
+        font-size: 16px;
+        color: #aaaaaa;
+       
+      }
+
+      .footer__social--inner
+      {
+          display: flex;
+    
+          justify-content: flex-end;
+      }
+
+      .footer__social
+      {
+          margin-top:35px;
+          margin-bottom: 25px;
+      }
+
+      .footer__contacts
+      {
+          text-align: right;
+      }
+
+      .footer__tel
+      {
+   
+        font-size: 33px;
+        line-height:1.2;
+        font-weight: bold;
+        color: white;
+
+
+
+      }
+      .footer__address
+      {
+        font-size: 16px;
+        color:#d0e0f9;
+    
+        }
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

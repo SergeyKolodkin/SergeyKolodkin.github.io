@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Bitter:400,700|Roboto+Condensed:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+        
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volkswagen</title>
+</head>
+
+<body>
+    <!-- SVG sprite -->
+
+    <svg style="display:none">
+
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 
+                    90h-76v181h121c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0" />
+            </g>
+
+        </symbol>
+
+        <symbol id="youtube" viewBox="0 0 461.001 461.001">
+
+            <g>
+
+                <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                    c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                    C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                    c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+            </g>
+
+        </symbol>
+
+        <symbol id="vk" viewBox="0 0 455 455">
+            <g>
+                <path d="M0,0v455h455V0H0z M341.098,251.727c10.445,10.19,21.49,19.784,30.865,31.049
+                        c4.142,4.978,8.06,10.113,11.046,15.881c4.239,8.264,0.397,17.318-6.985,17.817l-45.875-0.02
+                        c-11.841,0.973-21.277-3.801-29.235-11.902c-6.328-6.45-12.243-13.354-18.352-20.023c-2.486-2.746-5.115-5.314-8.239-7.362
+                        c-6.267-4.061-11.703-2.828-15.285,3.699c-3.643,6.649-4.499,14.031-4.835,21.435c-0.499,10.807-3.76,13.634-14.607,14.154
+                        c-23.208,1.075-45.218-2.451-65.659-14.134c-18.052-10.307-32.022-24.879-44.184-41.356
+                        c-23.702-32.124-41.855-67.391-58.154-103.673c-3.684-8.177-0.993-12.559,7.999-12.717c14.99-0.296,29.974-0.26,44.943-0.02
+                        c6.089,0.102,10.129,3.582,12.458,9.334c8.101,19.906,18.01,38.85,30.448,56.427c3.327,4.677,6.71,9.334,11.504,12.636
+                        c5.314,3.663,9.375,2.466,11.881-3.485c1.595-3.78,2.293-7.8,2.629-11.841c1.192-13.833,1.335-27.681-0.718-41.473
+                        c-1.274-8.621-6.149-14.195-14.745-15.825c-4.382-0.836-3.725-2.446-1.615-4.958c3.704-4.315,7.189-7.006,14.093-7.006h51.847
+                        c8.177,1.595,10.011,5.278,11.122,13.497l0.041,57.619c-0.097,3.184,1.595,12.615,7.306,14.704
+                        c4.575,1.513,7.622-2.171,10.368-5.075c12.417-13.176,21.277-28.756,29.194-44.877c3.505-7.087,6.532-14.449,9.477-21.817
+                        c2.17-5.452,5.553-8.137,11.703-8.04l49.916,0.061c1.472,0,2.986,0,4.438,0.239c8.396,1.452,10.705,5.075,8.096,13.293
+                        c-4.076,12.875-12.06,23.625-19.84,34.391c-8.341,11.525-17.216,22.647-25.495,34.233
+                        C331.087,237.201,331.683,242.535,341.098,251.727z" />
+            </g>
+
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 -47 512.00203 512">
+            <g>
+                <path
+                    d="m191.011719 419.042969c-22.140625 0-44.929688-1.792969-67.855469-5.386719-40.378906-6.335938-81.253906-27.457031-92.820312-33.78125l-30.335938-16.585938 32.84375-10.800781c35.902344-11.804687 57.742188-19.128906 84.777344-30.597656-27.070313-13.109375-47.933594-36.691406-57.976563-67.175781l-7.640625-23.195313 6.265625.957031c-5.941406-5.988281-10.632812-12.066406-14.269531-17.59375-12.933594-19.644531-19.78125-43.648437-18.324219-64.21875l1.4375-20.246093 12.121094 4.695312c-5.113281-9.65625-8.808594-19.96875-10.980469-30.777343-5.292968-26.359376-.863281-54.363282 12.476563-78.851563l10.558593-19.382813 14.121094 16.960938c44.660156 53.648438 101.226563 85.472656 168.363282 94.789062-2.742188-18.902343-.6875-37.144531 6.113281-53.496093 7.917969-19.039063 22.003906-35.183594 40.722656-46.691407 20.789063-12.777343 46-18.96875 70.988281-17.433593 26.511719 1.628906 50.582032 11.5625 69.699219 28.746093 9.335937-2.425781 16.214844-5.015624 25.511719-8.515624 5.59375-2.105469 11.9375-4.496094 19.875-7.230469l29.25-10.078125-19.074219 54.476562c1.257813-.105468 2.554687-.195312 3.910156-.253906l31.234375-1.414062-18.460937 25.230468c-1.058594 1.445313-1.328125 1.855469-1.703125 2.421875-1.488282 2.242188-3.339844 5.03125-28.679688 38.867188-6.34375 8.472656-9.511718 19.507812-8.921875 31.078125 2.246094 43.96875-3.148437 83.75-16.042969 118.234375-12.195312 32.625-31.09375 60.617187-56.164062 83.199219-31.023438 27.9375-70.582031 47.066406-117.582031 56.847656-23.054688 4.796875-47.8125 7.203125-73.4375 7.203125zm0 0" />
+            </g>
+        </symbol>
+
+
+        <symbol id="odnoklassniki" viewBox="0 0 94 94">
+            <g>
+                <path d="M47.051,37.59c5.247-0.017,9.426-4.23,9.407-9.489c-0.021-5.259-4.207-9.448-9.456-9.452
+                            c-5.293-0.005-9.52,4.259-9.479,9.566C37.562,33.454,41.788,37.612,47.051,37.59z" />
+                <path d="M89,0H5C2.239,0,0,2.238,0,5v84c0,2.762,2.239,5,5,5h84c2.762,0,5-2.238,5-5V5C94,2.238,91.762,0,89,0z M47.08,8.766
+                            c10.699,0.027,19.289,8.781,19.236,19.602c-0.057,10.57-8.787,19.138-19.469,19.102c-10.576-0.036-19.248-8.803-19.188-19.396
+                            C27.722,17.365,36.4,8.734,47.08,8.766z M68.753,55.072c-2.366,2.431-5.214,4.187-8.378,5.416
+                            c-2.991,1.156-6.268,1.742-9.512,2.13c0.49,0.534,0.721,0.793,1.025,1.102c4.404,4.425,8.826,8.832,13.215,13.27
+                            c1.494,1.511,1.81,3.386,0.985,5.145c-0.901,1.925-2.916,3.188-4.894,3.052c-1.252-0.088-2.228-0.711-3.094-1.582
+                            c-3.324-3.345-6.711-6.627-9.965-10.031c-0.947-0.992-1.403-0.807-2.241,0.056c-3.343,3.442-6.738,6.831-10.155,10.2
+                            c-1.535,1.514-3.36,1.785-5.143,0.922c-1.892-0.917-3.094-2.848-3.001-4.791c0.064-1.312,0.71-2.314,1.611-3.214
+                            c4.356-4.351,8.702-8.713,13.05-13.072c0.289-0.288,0.557-0.597,0.976-1.045c-5.929-0.619-11.275-2.077-15.85-5.657
+                            c-0.567-0.445-1.154-0.875-1.674-1.373c-2.002-1.924-2.203-4.125-0.618-6.396c1.354-1.942,3.632-2.464,5.997-1.349
+                            c0.459,0.215,0.895,0.486,1.313,0.775c8.528,5.86,20.245,6.023,28.806,0.266c0.847-0.647,1.754-1.183,2.806-1.449
+                            c2.045-0.525,3.947,0.224,5.045,2.012C70.314,51.496,70.297,53.488,68.753,55.072z" />
+            </g>
+        </symbol>
+
+        <symbol id ="up" viewBox="0 0 56.69 56.69">
+            
+            <g>
+                    <path d="m46.005 41.676c-1.202 0-2.332-.469-3.182-1.318l-14.478-14.479-14.477 14.478c-.849.85-1.979 1.318-3.182 1.318s-2.333-.468-3.183-1.318c-1.754-1.754-1.754-4.609 0-6.363l17.66-17.661c.849-.85 1.979-1.318 3.181-1.318 1.201 0 2.332.468 3.182 1.318l17.66 17.661c.851.85 1.318 1.979 1.318 3.182 0 1.201-.468 2.332-1.318 3.182-.849.849-1.979 1.318-3.181 1.318zm-17.66-18.625 15.892 15.893c.945.945 2.59.945 3.535 0 .473-.473.732-1.101.732-1.768s-.26-1.295-.732-1.768l-17.705-17.704c-.945-.902-2.56-.887-3.489.043l-17.661 17.661c-.975.975-.975 2.561 0 3.535.945.945 2.592.945 3.536 0z"/>
+                
+
+            </g>
+        </symbol>
+
+        <symbol id="down" viewBox="0 0 56.69 56.69">
+
+                <g><path d="m28.345 41.676c-1.202 0-2.332-.469-3.182-1.318l-17.66-17.662c-1.754-1.754-1.754-4.609 0-6.363.85-.85 1.98-1.318 3.183-1.318s2.333.468 3.182 1.318l14.477 14.479 14.478-14.479c.85-.85 1.979-1.318 3.182-1.318s2.332.468 3.182 1.318c.851.85 1.318 1.98 1.318 3.182s-.468 2.332-1.318 3.182l-17.659 17.658c-.851.853-1.982 1.321-3.183 1.321zm-17.659-24.661c-.668 0-1.296.26-1.769.732-.975.975-.975 2.561 0 3.535l17.66 17.661c.936.936 2.557.948 3.504.029l17.69-17.69c.473-.473.732-1.1.732-1.768s-.26-1.295-.732-1.768c-.945-.944-2.59-.944-3.535 0l-15.891 15.894-15.891-15.893c-.473-.472-1.1-.732-1.768-.732z"/></g>
+
+        </symbol>
+
+    </svg><!-- /SVG sprite -->
+
+    <!-- header -->
+    <div class="sloy">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="logo__size">
+                        <div class="logo__Volkswagen">
+                            <div class="header__logo">
+                                <img src="img/FonForLogo.png" alt="Фон для лого">
+                                <img class="overlay" src="img/volkswagen.png" alt="Лого">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="header__title">
+                        <div class="servis">
+                            <h1 class="servis__title"> Сервис Volkswagen </h1>
+                            <h1 class="servis__text"> ремонт VOLKSVAGEN в Новочеркасске </h1>
+                        </div>
+
+                        <div class="logo__avtolux"> <img src="img/Avtolux.png" alt="Лого Автолюкс"> </div>
+                        <div class="contacts">
+                            <div class="tel">+7 (988) 517-91-12</div>
+                            <div class="contacts__text">Запись на ТО или ремонт</div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </header>
+        <div class="nav" id="nav">
+            <div class="container">
+
+                <div class="logo__size">
+
+                </div>
+                <div class="nav__inner">
+                    <div class="nav__links" id="nav__links">
+                        <a class="nav__link" href="#" data-scroll="#aboutService">О сервисе</a>
+                        <a class="nav__link" href="#" data-scroll="#tires">Летняя резина</a>
+                        <a class="nav__link" href="#" data-scroll="#address">Контакты</a>
+
+                    </div>
+
+
+                    <div class="social">
+                        <a class="social__item" href="#">
+                            <svg class="social__iconFacebook">
+                                <use xlink: href="#facebook"></use>
+
+                            </svg></a>
+
+                        <a class="social__item" href="#">
+                            <svg class="social__iconYoutube">
+                                <use xlink: href="#youtube"></use>
+
+                            </svg></a>
+
+                        <a class="social__item" href="#">
+                            <svg class="social__iconVK">
+                                <use xlink: href="#vk"></use>
+
+                            </svg></a>
+
+                        <a class="social__item" href="#">
+                            <svg class="social__iconTwitter">
+                                <use xlink: href="#twitter"></use>
+
+                            </svg></a>
+
+                        <a class="social__item" href="#">
+                            <svg class="social__iconOdnoklassniki">
+                                <use xlink: href="#odnoklassniki"></use>
+
+                            </svg></a>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div> <!-- /header -->
+
+    </div>
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+
+                <div class="intro__item">
+                    <button onclick="My_function()" class="btn" type="button">Персональный менеджер</button>
+
+                    <div class="submemu__inner" id="submemu__inner">
+
+                    
+                            <div id="submenu" class="submenu">
+                                    
+                                    <div class="buttons__inner">
+                                            <button class="arrowButton " onclick="plusDivs(-1)"><svg class="icon_arrow"> <use xlink: href="#up"></use></svg></button>
+                                            <button class="arrowButton" onclick="plusDivs(1)"><svg class="icon_arrow"> <use xlink: href="#down"></use></svg></button>
+
+                                    </div>
+                                   
+
+                                    <div class="w3-content">
+
+                                            <div class="visitingCard">
+
+                                                
+            
+            
+                                                    <div class="submenu__title">
+                                                        Валерий Логиник
+                                                    </div>
+                
+                                                    <div class="submenu__text">
+                                                        Ваш персональный менеджер по марке VOLKSWAGEN. О ремонте автомобилей VOLKSWAGEN
+                                                        я знаю
+                                                        все!
+                
+                
+                                                    </div>
+                                                    <div class="submenu__text submenu__text--bold">
+                
+                                                        Позвоните мне сейчас и я сделаю вам
+                                                        СКИДКУ 10% на все работы и материалы!
+                
+                                                    </div>
+                
+                                                    <div class="pers__tel pers__tel--center">
+                
+                                                        +7 (988) 517-91-12
+                
+                                                    </div>
+                
+                                                </div>
+    
+                                                <div class="visitingCard">
+                
+                
+                                                        <div class="submenu__title">
+                                                            Сергей Горинов
+                                                        </div>
+                    
+                                                        <div class="submenu__text">
+                                                            Ваш персональный менеджер по марке VOLKSWAGEN. О ремонте автомобилей VOLKSWAGEN
+                                                            я знаю
+                                                            все!
+                    
+                    
+                                                        </div>
+                                                        <div class="submenu__text submenu__text--bold">
+                    
+                                                            Позвоните мне сейчас и я сделаю вам
+                                                            СКИДКУ 15% на все работы и материалы!
+                    
+                                                        </div>
+                    
+                                                        <div class="pers__tel pers__tel--center">
+                    
+                                                            +7 (988) 517-65-32
+                    
+                                                        </div>
+                    
+                                                    </div>
+
+
+                                                    <div class="visitingCard">
+                
+                
+                                                        <div class="submenu__title">
+                                                            Иван Горинов
+                                                        </div>
+                    
+                                                        <div class="submenu__text">
+                                                            Ваш персональный менеджер по марке VOLKSWAGEN. О ремонте автомобилей VOLKSWAGEN
+                                                            я знаю
+                                                            все!
+                    
+                    
+                                                        </div>
+                                                        <div class="submenu__text submenu__text--bold">
+                    
+                                                            Позвоните мне сейчас и я сделаю вам
+                                                            СКИДКУ 15% на все работы и материалы!
+                    
+                                                        </div>
+                    
+                                                        <div class="pers__tel pers__tel--center">
+                    
+                                                            +7 (988) 517-65-32
+                    
+                                                        </div>
+                    
+                                                    </div>
+                                       
+                                          </div>
+                                         
+
+                               
+
+                               
+                                
+                              
+
+
+                        
+                                
+
+
+
+                            </div>
+
+                       
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="intro__item">
+                    <button class="btn" type="button">Сервисное то вашего Volkswagen</button>
+
+                </div>
+
+                <div class="intro__item">
+
+                    <button class="btn" type="button">Сервис Volkswagen</button>
+
+                </div>
+
+                <div class="intro__item">
+
+                    <button class="btn" type="button">Запчасти Volksvagen</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> <!-- /Intro -->
+
+    <!-- aboutService -->
+
+    <div class="aboutServise" id="aboutService">
+        <div class="aboutService__body">
+            <div class=" parallax aboutService__parallax">
+                <div class="container">
+                    <H2 class="aboutService__title"> Ремонт автомобилей <span>VOLKSVAGEN</span> в Новочеркасске </h2>
+                    <div class="aboutServise__inner">
+
+                        <div class="aboutService__items">
+                            <div class="aboutService__text">
+                                Квалифицированные специалисты,
+                                прошедшие обучение по марке
+                                VOLKSWAGEN
+                            </div>
+
+
+                        </div>
+                        <div class="aboutService__items">
+                            <div class="aboutService__text">
+                                Оригинальные масла и жидкости,
+                                а также качественные
+                                неоригинальные
+                            </div>
+                        </div>
+
+                        <div class="aboutService__items">
+                            <div class="aboutService__text">
+                                Всегда в наличии шины, диски и
+                                расходные материалы для ТО
+                                вашего VOLKSVAGEN
+                            </div>
+
+
+                        </div>
+                        <div class="aboutService__items">
+                            <div class="aboutService__text">
+                                Оригинальные запчасти VOLKSVAGEN
+                                и качественные аналоги проверенные
+                                временем
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div> <!-- /aboutService -->
+
+    <!-- maintenance -->
+
+
+    <div class="maintenance">
+        <div class="container">
+            <h2 class="maintenance__title"> Услуги по обслуживанию VOLKSWAGEN </h2>
+            <div class="maintenance__inner">
+
+
+                <div class="maintenance__item">
+
+                    <div class="maintenance__text">
+                        Регулярное техническое
+                        обслуживание
+                     <img class="maintenance__line" src="img/poloski/line_1.png" alt="">  
+                       
+
+
+                    </div>
+                 
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="maintenance__item maintenance__item--right">
+
+                    <div class="maintenance__text ">
+                        <!-- Замена ремня ГРМ<img class="maintenance__line maintenance__line--right" src="img/poloski/line_3.png" alt=""> </div> -->
+                        
+                            Замена ремня ГРМ<img class="maintenance__line maintenance__line--right" src="img/poloski/line_3.png" alt=""> </div>
+                    
+                  
+                    </div>
+                  
+                   
+
+
+                <div class="maintenance__item">
+
+                    <div class="maintenance__text">
+                        Замена расходных<br>
+                        материалов
+                        <img class="maintenance__line" src="img/poloski/line_2.png" alt=""> 
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="maintenance__item maintenance__item--right">
+
+                    <div class="maintenance__text ">
+                        Замена колодок<br>
+                        и дисков <img class="maintenance__line maintenance__line--right" src="img/poloski/line_2.png" alt=""></div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="maintenance__item">
+
+                    <div class="maintenance__text">
+                        Замена масел<br>
+                        и тех.жидкостей
+                        <img class="maintenance__line maintenance__line--bottom" src="img/poloski/line_3.png" alt=""> 
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="maintenance__item maintenance__item--right">
+
+                    <div class="maintenance__text">
+                        Заправка<br>
+                        кондиционеров
+
+                        <img class="maintenance__line maintenance__line--right" src="img/poloski/line_1.png" alt=""> 
+                    
+                    </div>
+                </div>
+
+                <div class="maintenance__footer">
+
+
+
+
+                    <div class="maintenance__text maintenance__text--right">
+
+                        Ремонт ходовой
+                      
+                    </div>
+                    <div class="maintenance__text">
+                        Шиномонтаж
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- /maintenance -->
+
+    <!-- tires -->
+
+    <div class="tires" id="tires">
+        <div class="parallax tires__parallax">
+
+            <div class="container">
+                <H2 class="tires__title">Лучшие летние шины для вашего VOLKSWAGEN только у нас</h2>
+                <div class="tires__inner">
+                    <div class="brandsCars">
+                        <div class="braidsCars__item">
+
+                            <div class="braidsCars__titls">
+
+                                Volksvagen
+
+                            </div>
+                            <div class="braidsCars__titls">
+
+
+                                Touareg
+                            </div>
+
+                            <div class="braidsCars__text">
+
+                                235/65 R17
+
+
+                            </div>
+
+                            <div class="braidsCars__text">
+
+
+                                255/60 R17
+
+                            </div>
+
+                        </div>
+
+                        <div class="braidsCars__item">
+
+                            <div class="braidsCars__titls">
+
+                                Volksvagen Jetta
+                            </div>
+
+                            <div class="braidsCars__text">
+
+                                195/65 R15
+
+                            </div>
+
+                        </div>
+
+                        <div class="braidsCars__item">
+
+                            <div class="braidsCars__titls">
+
+                                Volksvagen Polo
+                                sedan
+                            </div>
+
+                            <div class="braidsCars__text">
+
+                                175/70 R17
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="imgsCars">
+                        <div class="icon__car">
+
+                            <img src="img/imgsCars/Car-1.png" alt="">
+
+                        </div>
+
+                        <div class="icon__car">
+                            <img src="img/imgsCars/Car-2.png" alt="">
+
+                        </div>
+
+                        <div class="icon__car">
+                            <img src="img/imgsCars/Car-3.png" alt="">
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="border__vert"></div>
+
+                    <div class="tires__navsLinks">
+
+                        <a class="tires__navsLink" href="#">Bridgestone</a>
+                        <a class="tires__navsLink" href="#">BFGoodrich</a>
+                        <a class="tires__navsLink" href="#">Tigar</a>
+                        <a class="tires__navsLink" href="#">Nokian</a>
+                        <a class="tires__navsLink" href="#">Nordman</a>
+                        <a class="tires__navsLink" href="#">Michelin</a>
+                        <a class="tires__navsLink" href="#">Yokohama</a>
+                        <a class="tires__navsLink" href="#">Dunlop</a>
+                        <a class="tires__navsLink" href="#">Continental</a>
+                        <a class="tires__navsLink" href="#">Gislaved</a>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div> <!-- /tires -->
+
+    <!-- cutaway -->
+
+    <div class="cutaway">
+        <div class="container">
+
+            <div class="cutaway__inner">
+                <div class="cutaway__item">
+                    <div class="cutaway__title">
+
+                        На другие модели VOLKSWAGEN цены и наличие
+                        уточняйте у менеджера.
+                    </div>
+                    <div class="pers__tel">
+
+                        +7 (988) 517-91-12
+
+                    </div>
+
+
+                </div>
+
+                <div class="cutaway__item">
+                    <div class="cutaway__text">
+
+                        В сервисном центре «Автолюкс» вы получите грамотную консультацию мастеров, прошедших
+                        профессиональное обучение.
+                        Вы сможете заказать оригинальные запчасти и расходные материалы для автомобиля Volkswagen, а так
+                        же качественные аналоги мировых производителей.
+                        Доставка от 1 дня.<b>Ваш персональный менеджер всегда на связи!</b>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div> <!-- /cutaway -->
+
+    <!--Castrol  -->
+
+    <div class="castrol">
+        <div class="container">
+            <H2 class="castrol__title"> VOLKSWAGEN рекомендует тех.жидкости и масла CASTROL </H2>
+            <div class="castrol__items">
+
+
+                <img class="castrol__logo" src="img/castrol.png" alt="">
+                <img class="polo" src="img/polo.png" alt="">
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!--/Castrol  -->
+
+    <!-- Adress -->
+
+    <div class="adress" id="address">
+        <div class="container">
+            <h2 class="adress__title">Сервис VOLKSWAGEN в Автолюкс: Баклановский 14</h2>
+        </div>
+        <div class="adess__inner">
+            <img class="adress__map" src="img/contacts__map.png" alt="">
+
+        </div>
+
+
+    </div> <!-- /Adress -->
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__logo">
+                        <img src="img/Avtolux.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="footer__item--center">
+                    <div class="footer__title">
+                        Cервис VOLKSVAGEN в Автолюкс
+                    </div>
+                    <div class="footer__text">
+                        ремонт NISSAN в Новочеркасске
+                    </div>
+
+                </div>
+
+                <div class="footer__item">
+
+                    <div class="footer__social--inner">
+                        <div class="footer__social">
+
+                            <div class="social">
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconFacebook">
+                                        <use xlink: href="#facebook"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconYoutube">
+                                        <use xlink: href="#youtube"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconVK">
+                                        <use xlink: href="#vk"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconTwitter">
+                                        <use xlink: href="#twitter"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconOdnoklassniki">
+                                        <use xlink: href="#odnoklassniki"></use>
+
+                                    </svg></a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__tel">
+                            (928) 182-15-77
+                        </div>
+
+                        <div class="footer__address">
+                            ул. Баклановский, 14
+
+                        </div>
+
+                        <div class="footer__address">
+
+                            Пн-пт: 8.00-20.00 | Сб-вс: 9.00-18.00
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div> <!-- /footer -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
