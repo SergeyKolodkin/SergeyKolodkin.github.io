@@ -1,0 +1,51 @@
+@import "vars";
+@import "mixsins.scss";
+html
+{
+    font-size: 15px;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: $gray;
+
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+// Bootstrap
+@import"../../../node_modules/bootstrap/scss/functions";
+@import"../../../node_modules/bootstrap/scss/variables";
+@import"../../../node_modules/bootstrap/scss/mixins";
+@import"../../../node_modules/bootstrap/scss/grid";
+@import"../../../node_modules/bootstrap/scss/modal";
+
+// Blocks
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/btn.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav.scss";
+@import "blocks/lang.scss";
+@import "blocks/content.scss";
+@import "blocks/footer.scss";
+@import "blocks/intro.scss";
+@import "blocks/contacts.scss";
+@import "blocks/myFoto.scss";
+@import "blocks/container__inner.scss";
+@import "blocks/circle.scss";
+@import "blocks/social.scss";
+@import "blocks/modal.scss";
+@import "blocks/form__modal.scss";
+@import "blocks/input.scss";
+@import "blocks/skills.scss";
+@import "blocks/portfolio.scss";

@@ -1,0 +1,112 @@
+.social
+{
+    display: flex;
+}
+
+.social__link
+{
+    margin-left: 1.2rem;
+}
+
+.social__text
+{
+   color: $black;
+   font-size: .9rem;
+   font-weight: 700;
+}
+
+.social__iconFacebook
+{
+  
+    height: 25px;
+    width: 25px;
+  
+    fill:#9b9b9b;
+}
+ 
+.social__iconFacebook:hover
+{
+    fill:#4065b4;
+  
+  
+}
+
+.social__iconYoutube
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+}
+ 
+.social__iconYoutube:hover
+{
+    fill:#df1818;
+    background-color: rgba(255, 255, 255, 0);
+
+  
+}
+
+/* Vk 
+============================================================================== */
+.social__iconVK
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconVK:hover
+{
+    fill:#4e759d;
+    background-color: white;
+ 
+  
+}
+
+/* twitter 
+===============================================================================*/
+
+.social__iconTwitter
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconTwitter:hover
+{
+    fill:#017dfa;
+    
+ 
+  
+}
+
+/* odnoklassniki
+===============================================================================*/
+
+.social__iconOdnoklassniki
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconOdnoklassniki:hover
+{
+    fill:#ff6004;
+    background-color: white;
+ 
+  
+}
+

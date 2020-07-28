@@ -1,0 +1,59 @@
+.skills
+{
+    margin-bottom: 2rem;
+}
+
+.skills__title
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom:1rem ;
+    
+}
+.skill__title
+{
+  
+    margin: 0;
+  
+}
+
+
+
+.skills__icon
+{
+   
+    height: 25px;
+    width: 25px;
+  
+    fill:$black;
+    margin-right:1rem;
+    margin-top: .6rem;
+   
+   
+    
+}
+ 
+.skills__icon:hover
+{
+    fill:$pink;
+  
+  
+}
+
+
+
+.skill__item
+{
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    padding: 1.2rem;
+    height: 10rem;
+}
+
+.title__skills
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
