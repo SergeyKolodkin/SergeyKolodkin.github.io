@@ -1,0 +1,68 @@
+.btn
+{
+    display:flex;
+    padding:13px 0;
+    width: 178px;
+    background: rgba(255, 255, 255, 0);
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    color:$black;
+    background:
+      linear-gradient(to right,transparent, $pink) top/100% 2px,
+      linear-gradient(to left,transparent, $pink) bottom/100% 2px,
+      linear-gradient(to bottom,transparent, $pink) left/2px 100%,
+      linear-gradient(to top,transparent,  $pink) right/2px 100%;
+      
+    background-repeat:no-repeat;
+    position:relative;
+    border: none;
+    justify-content: center; 
+    margin-top:3.5rem;
+    cursor: pointer;
+    transition: background .5s linear, color .2s linear;
+
+    &:before,
+    &:after {
+      content:"";
+      position:absolute;
+      width:10px;
+      height:10px;
+      border:2px solid $white;
+    
+    }
+    &:before {
+      top:0;
+      right:0;
+      border-left:none;
+      border-bottom:none;
+    }
+    &:after {
+      bottom:0;
+      left:0;
+      border-right:none;
+      border-top:none;
+    }
+
+
+    &:hover
+    {
+
+        background: $pink;
+        color:$white;
+        outline: none;
+    }
+
+    
+    &:active, 
+    &:focus {
+    outline: none;
+}
+    
+}
+
+.btn__close
+{
+  margin-top:0rem;
+}
+
+/* _btn */

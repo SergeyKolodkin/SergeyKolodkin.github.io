@@ -1,0 +1,32 @@
+.contacts
+{
+    display: flex;
+    margin:0;
+    text-decoration: none;
+    margin-top: 3.2rem;
+    color:$black;
+    list-style: none;
+    justify-content: flex-end;
+   
+    
+}
+
+.contacts__item
+{
+    flex-direction: row;
+    margin-top: 1rem;
+    
+}
+
+.contacts__link
+{
+
+    text-decoration: none;
+    color:$black;
+    margin-right: 0.7rem;
+    
+    &:hover
+    {
+        text-decoration: underline;  
+    }
+}

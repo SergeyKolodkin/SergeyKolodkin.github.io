@@ -1,0 +1,42 @@
+.intro
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.intro__info
+{
+   
+    width: 50%;
+    margin-top: 5rem;
+ 
+}
+
+
+.intro__text
+{
+    font-size: 1.2rem;
+    color:$white;
+}
+
+.intro__title
+{
+  color: $black;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+.intro_subtitle{
+   
+    font-size: 1.6rem;
+    color: $black;
+    font-weight: 400;
+}
+
+.intro__span
+{
+    color:$white;
+}
