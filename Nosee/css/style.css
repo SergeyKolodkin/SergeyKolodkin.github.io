@@ -1,0 +1,222 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+/* Обратите внимание на измения для "липкой" шапки, пометил их звездочкой ниже */
+nav {
+
+    height: 50px;
+    background-color:rgb(51, 50, 50) ;
+
+}
+
+header
+{
+    position: relative;
+    z-index: 2;
+}
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+    padding:13px 70px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu .menu__link
+{
+color: white;
+font-size: 15px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+}
+
+.menu .menu__item
+{
+    border-right: 2px dotted black;
+    padding-right: 35px;
+}
+
+.subheader
+{
+height: 84px;
+background-color: rgba(0, 0, 0, 0.6);
+ position: absolute;
+width: 100%; 
+
+}
+
+.subheader .subheader__link
+{
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+.subheader__text
+{
+  margin-top: 6px;
+color:rgba(0,0,0,0.5) ;
+font-size: 13px;
+font-weight: 400;
+}
+.subheader__call
+{
+    margin-top: 19px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.subheader__phone
+{
+margin-top: 8px;
+color: #ffffff;
+font-size: 22px;
+font-weight: 400;
+text-align: center;
+text-transform: uppercase;
+line-height: 24px;
+}
+.subheader .subheader__btn
+{
+    margin-top: 19px;
+width: 172px;
+height: 46px;
+border-radius: 4px;
+border:none;
+background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+
+text-transform: uppercase;
+
+}
+
+.promo{
+    min-width: 800px;
+    background:url(../img/bg/main_bg.jpg ) center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+    transform: translateY(-84px);
+    z-index: 1;
+}
+
+.promo__header
+{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+    margin-top: 67px;
+   
+}
+
+.promo__subheader
+{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin-top: 22px;
+}
+
+.promo__desc
+{
+
+  color: #ffffff;
+
+font-size: 18px;
+font-weight: 400;
+text-align: center;
+line-height: 24px;
+margin-top: 23px;
+}
+
+
+
+.promo__btn
+{
+    display:block;
+    margin:115px auto 0 auto;
+    width: 172px;
+    height: 46px;
+    border-radius: 4px;
+    border:none;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    
+    text-transform: uppercase;
+}
+
+.advantages
+{
+    display: block;
+   margin: 0 auto;
+   width: 112px;
+   height: 24px;
+   background-color: #000000;
+   color: #ffffff;
+   font-size: 11px;
+   font-weight: 400;
+   text-align: center;
+   text-transform: uppercase;
+   line-height: 24px;
+}
+
+.opportunities__title
+{
+    color: #222222;
+
+font-size: 38px;
+font-weight: 700;;
+text-align: center;
+text-transform: uppercase;
+margin-top:38px;
+margin-bottom: 40px;
+}
+
+.opportunities .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.opportunities .reasons_block .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.opportunities .reasons_block .reasons_descr {
+    width: 343px;
+}
+
+.opportunities .reasons_block .reasons_descr .reasons_subtitle{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.opportunities .reasons_block .reasons_descr .reasons_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
