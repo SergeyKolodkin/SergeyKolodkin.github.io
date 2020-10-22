@@ -75,7 +75,7 @@
 
         &__text
         {
-            color:white;
+            color:rgb(250, 11, 11);
             font-size: 11px;
         }
         .subheader__btn
@@ -122,6 +122,8 @@
     }
     .mobile
     {
+
+       min-width: 100%;
         &_item
         {
             width: 290px;
